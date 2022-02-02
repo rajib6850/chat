@@ -1,0 +1,107 @@
+
+
+
+/*===== Scroll Bar Style ======*/
+
+::-webkit-scrollbar{
+	width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+
+
+/*Chat Card Style*/
+
+.chat-box{
+	max-width: 600px;
+}
+
+.chat-profile-image{
+	width: 50px;
+	height: 40px;
+	transform: scale(1.2);
+}
+
+.chat-body{
+	height: 450px;
+	overflow-y: scroll;
+}
+
+
+.chat-text-sender,
+.chat-text-reciver{
+	width: 88%;
+}
+
+.chat-text p{
+	text-align: justify;
+}
+
+.left-angle,
+.right-angle{
+	position: relative;
+}
+
+.left-angle::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 11px solid #555;
+    position: absolute;
+    right: 100%;
+    top: 3px;
+}
+.right-angle::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 11px solid #555;
+    position: absolute;
+    left: 100%;
+    top: 3px;
+}
+
+.chat-text-reciver{
+	float: right;
+}
+
+
+.chat-profile img{
+	width:  40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.2)	;
+
+}
+
+.chat-text span{
+	font-size: 11px;
+	display: block;
+}
+
+
+
+/*=========Card Footer======*/
+.chat-input-box form{
+	position: relative;
+}
+
+.chat-input-box form button{
+	position: absolute;
+	right: 10px;
+}
