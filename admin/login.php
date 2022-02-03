@@ -22,7 +22,8 @@
 	<div class="limiter">
 		<div class="container-login100 page-background">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<div class="error"></div>
+				<form class="login100-form validate-form login-form" action="" method="POST">
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-flower"></i>
 					</span>
@@ -30,7 +31,7 @@
 						Log in for free chat
 					</span>
 					<div class="wrap-input100 validate-input" data-validate="Enter username">
-						<input class="input100" type="text" name="username" placeholder="Username">
+						<input class="input100" type="text" name="username" placeholder="Username / E-mail">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
@@ -49,7 +50,6 @@
 						</button>
 					</div>
 					<div class="text-center p-t-90">
-
 						
 						Don't have an account ? <a class="txt1" href="sign_up.php">Register</a>	| 
 											
@@ -70,5 +70,4 @@
 </body>
 
 
-<!-- Mirrored from www.einfosoft.com/templates/admin/spice/source/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Feb 2022 02:38:09 GMT -->
 </html>

@@ -19,7 +19,8 @@ jQuery(document).ready(function() {
 		  	username: username,
 		  	email: email,
 		  	pass: pass,
-		  	pass2: pass2
+		  	pass2: pass2,
+		  	registration: 'reg'
 		  },
 		  success: function(data) {
 		  	jQuery('.error').html(data);
@@ -34,6 +35,37 @@ jQuery(document).ready(function() {
 
 		return false;
 	});
+
+
+
+	// Login Ajax Process
+
+	jQuery('.login-form').submit(){
+
+		var username = jQuery('input[name="username"]').val();
+		var password = jQuery('input[name="password"]').val();
+		var check = jQuery('input[name="remember-me"]').val();
+
+		jQuery.ajax({
+
+			url : 'ajax.php',
+			type : "POST",
+			data : {
+				login : 'login_success',
+				username : username,
+				pass : password,
+				check : check
+			},
+			success : function(output){
+				jQuery('.error').html(output);
+			}
+
+
+		});
+
+
+
+	}
 
 
 
